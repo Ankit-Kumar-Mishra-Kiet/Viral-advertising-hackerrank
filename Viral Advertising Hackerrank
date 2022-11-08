@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int i,likes,shares,cumulative=0,n;
+    scanf("%d",&n);
+    
+        shares=5;
+        likes=shares/2;
+        cumulative+=likes;
+    for(i=1;i<n;i++)
+    {
+    shares=likes*3;
+    likes=shares/2;
+    cumulative+=likes;
+    }
+ printf("%d",cumulative);
+ return 0;   
+}
